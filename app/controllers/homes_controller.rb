@@ -1,5 +1,6 @@
 class HomesController < ApplicationController
+
   def index
-    entries = @contentful_client.entries
+    @contentful_client.entries(content_type: 'recipe')
   end
 end
