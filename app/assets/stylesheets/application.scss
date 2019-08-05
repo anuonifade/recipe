@@ -15,11 +15,23 @@
 @import "bootstrap-reboot";
 
 .main-page {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: 5px;
 }
 
-div.card {
+div.card.all-recipe-page {
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   }
+}
+
+.recipe-page {
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 600px;
+}
+
+div.card.single-recipe {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
