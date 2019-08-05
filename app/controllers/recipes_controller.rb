@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def index
-    @recipe_info = @contentful_client.entry(id: get_recipe_id[:id])
+    @recipe = @contentful_client.entry(get_recipe_id[:id].to_s)
   end
 
   private
